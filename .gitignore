@@ -1,0 +1,13 @@
+backend/static/
+frontend/dist/
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+*.pyc
+**/*.pyc
+.pytest_cache/
+**/.pytest_cache/
+.env
+.venv/
+*.bak
