@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wind forecast desk</title>
+<style>
+:root{--bg:#f3f6f4;--ink:#12302b;--mute:#5d7570;--line:#cfdad6;--fc:#0f766e;--act:#c2410c;--card:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a18;--ink:#e3efec;--mute:#8fa8a2;--line:#27403b;--card:#14231f;--fc:#2dd4bf;--act:#fb923c}}
+[data-theme="dark"]{--bg:#0e1a18;--ink:#e3efec;--mute:#8fa8a2;--line:#27403b;--card:#14231f;--fc:#2dd4bf;--act:#fb923c}
+[data-theme="light"]{--bg:#f3f6f4;--ink:#12302b;--mute:#5d7570;--line:#cfdad6;--fc:#0f766e;--act:#c2410c;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,"Times New Roman",serif}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.9rem;margin:0 0 4px}h2{font-size:1.1rem;margin:28px 0 8px}
+.sub,.note{color:var(--mute);font-family:system-ui,sans-serif;font-size:.9rem}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:12px}
+.kpi{border-left:3px solid var(--fc);padding:4px 10px;background:var(--card)}
+.kpi b{display:block;font-size:1.5rem}.kpi span{font:.8rem system-ui,sans-serif;color:var(--mute)}
+input{font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:4px;background:var(--card);color:var(--ink)}
+.err{color:var(--act)}
+</style></head>
+<body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
